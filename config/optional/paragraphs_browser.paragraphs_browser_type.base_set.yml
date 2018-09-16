@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies: {  }
+id: base_set
+label: 'Base set'
+groups:
+  editorial:
+    label: Editorial
+    id: editorial
+    weight: 0
+  reusable:
+    label: Reusable
+    id: reusable
+    weight: 1
+  helpers:
+    label: Helpers
+    id: helpers
+    weight: 2
+map:
+  pgt_form: reusable
+  pgt_text: editorial
+  pgt_view: reusable
+  pgt_image: editorial

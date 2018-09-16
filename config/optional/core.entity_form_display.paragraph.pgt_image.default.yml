@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.modal_img_browser
+    - field.field.paragraph.pgt_image.field_pg_descr
+    - field.field.paragraph.pgt_image.field_pgtimg_media_ref
+    - paragraphs.paragraphs_type.pgt_image
+  module:
+    - entity_browser
+    - field_group
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - status
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Settings
+      region: content
+id: paragraph.pgt_image.default
+targetEntityType: paragraph
+bundle: pgt_image
+mode: default
+content:
+  field_pg_descr:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pgtimg_media_ref:
+    weight: 1
+    settings:
+      entity_browser: modal_img_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: form_preview
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

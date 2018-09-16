@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pgt_text.field_pg_descr
+    - field.field.paragraph.pgt_text.field_pgtt_body
+    - paragraphs.paragraphs_type.pgt_text
+  module:
+    - text
+id: paragraph.pgt_text.default
+targetEntityType: paragraph
+bundle: pgt_text
+mode: default
+content:
+  field_pgtt_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_pg_descr: true

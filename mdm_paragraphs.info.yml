@@ -1,0 +1,13 @@
+name: MD Paragraphs
+description: MD default paragraphs
+package: MD Custom
+dependencies:
+  - paragraphs
+  - paragraphs_browser
+  - field_group
+  - views
+  - viewsreference
+
+type: module
+core: 8.x
+version: VERSION

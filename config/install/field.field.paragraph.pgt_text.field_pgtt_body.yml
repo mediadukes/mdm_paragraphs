@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pgtt_body
+    - paragraphs.paragraphs_type.pgt_text
+  module:
+    - text
+id: paragraph.pgt_text.field_pgtt_body
+field_name: field_pgtt_body
+entity_type: paragraph
+bundle: pgt_text
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

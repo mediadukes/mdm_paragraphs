@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_browser
+third_party_settings:
+  paragraphs_browser:
+    image_path: modules/contrib/mdm_paragraphs/src/images/pg_browser_icons/view.png
+id: pgt_view
+label: View
+icon_uuid: null
+description: 'Adds a view as a paragraph'
+behavior_plugins: {  }

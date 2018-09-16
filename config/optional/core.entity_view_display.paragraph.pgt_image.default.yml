@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pgt_image.field_pg_descr
+    - field.field.paragraph.pgt_image.field_pgtimg_media_ref
+    - paragraphs.paragraphs_type.pgt_image
+id: paragraph.pgt_image.default
+targetEntityType: paragraph
+bundle: pgt_image
+mode: default
+content:
+  field_pgtimg_media_ref:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_pg_descr: true
