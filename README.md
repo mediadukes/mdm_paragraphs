@@ -12,7 +12,7 @@ Two optional paragraph types can be installed (independently) if each of their d
 
 More paragraph types will be added later.
 
-##Usage
+## Usage
 
 Just install as any other drupal module using `composer require`.
 
