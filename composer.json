@@ -14,9 +14,19 @@
     }
   ],
   "require": {
+    "cweagans/composer-patches": "^1.6.5",
     "drupal/paragraphs": "^1.0",
     "drupal/paragraphs_browser": "^1.0",
     "drupal/field_group": "^3.0",
     "drupal/viewsreference": "^2.0"
+  },
+  "extra": {
+    "patches": {
+      "drupal/paragraphs_browser": {
+        "http://dgo.to/2923479 - Paragraph field's >exclude selected types< option not taken into account":
+        "https://www.drupal.org/files/issues/2923479-paragraphs_browser-exclude_option_ignored-2.patch"
+      }
+    },
+    "enable-patching": true
   }
 }
