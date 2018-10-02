@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_descr
+    - paragraphs.paragraphs_type.pgt_block
+id: paragraph.pgt_block.field_pg_descr
+field_name: field_pg_descr
+entity_type: paragraph
+bundle: pgt_block
+label: 'Paragraph description'
+description: 'Describe the paragraph for better user experience when editing existing paragraphs.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

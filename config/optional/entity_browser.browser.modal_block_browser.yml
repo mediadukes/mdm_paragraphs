@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.ebv_blocks
+  module:
+    - views
+name: modal_block_browser
+label: 'Modal Block Browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: ''
+  link_text: 'Select a block'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  aaefd2fa-1662-4b9d-b886-432568b313df:
+    settings:
+      view: ebv_blocks
+      view_display: eb_blocks_table
+      submit_text: 'Select block'
+      auto_select: false
+    uuid: aaefd2fa-1662-4b9d-b886-432568b313df
+    weight: 1
+    label: Library
+    id: view

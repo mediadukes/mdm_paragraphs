@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.pgt_layout.field_pg_descr
+    - field.field.paragraph.pgt_layout.field_pgtl_content
+    - field.field.paragraph.pgt_layout.field_pgtl_style
+    - paragraphs.paragraphs_type.pgt_layout
+id: paragraph.pgt_layout.preview
+targetEntityType: paragraph
+bundle: pgt_layout
+mode: preview
+content:
+  field_pg_descr:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_pgtl_content: true
+  field_pgtl_style: true

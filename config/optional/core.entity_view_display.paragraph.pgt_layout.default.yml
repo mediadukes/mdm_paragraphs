@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pgt_layout.field_pg_descr
+    - field.field.paragraph.pgt_layout.field_pgtl_content
+    - field.field.paragraph.pgt_layout.field_pgtl_style
+    - paragraphs.paragraphs_type.pgt_layout
+  module:
+    - entity_class_formatter
+    - entity_reference_revisions
+id: paragraph.pgt_layout.default
+targetEntityType: paragraph
+bundle: pgt_layout
+mode: default
+content:
+  field_pgtl_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_pgtl_style:
+    type: entity_class_formatter
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_pg_descr: true

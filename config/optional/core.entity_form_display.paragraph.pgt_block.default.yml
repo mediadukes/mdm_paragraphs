@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pgt_block.field_pg_descr
+    - field.field.paragraph.pgt_block.field_pgtb_block_ref
+    - paragraphs.paragraphs_type.pgt_block
+  module:
+    - entity_browser_entity_form
+    - field_group
+    - inline_entity_form
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - status
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Settings
+      region: content
+id: paragraph.pgt_block.default
+targetEntityType: paragraph
+bundle: pgt_block
+mode: default
+content:
+  field_pg_descr:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pgtb_block_ref:
+    weight: 1
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: modal_block_browser
+    type: inline_entity_form_complex
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

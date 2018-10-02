@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pgtl_content
+    - paragraphs.paragraphs_type.pgt_layout
+  module:
+    - entity_reference_revisions
+id: paragraph.pgt_layout.field_pgtl_content
+field_name: field_pgtl_content
+entity_type: paragraph
+bundle: pgt_layout
+label: 'Layout content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      pgt_text:
+        weight: -19
+        enabled: false
+      pgt_image:
+        weight: -17
+        enabled: false
+      pgt_block:
+        weight: -15
+        enabled: false
+      pgt_form:
+        weight: -14
+        enabled: false
+      pgt_view:
+        weight: -13
+        enabled: false
+      pgt_layout:
+        weight: -12
+        enabled: false
+field_type: entity_reference_revisions

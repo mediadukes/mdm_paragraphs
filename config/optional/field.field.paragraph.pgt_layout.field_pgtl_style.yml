@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pgtl_style
+    - paragraphs.paragraphs_type.pgt_layout
+  module:
+    - options
+id: paragraph.pgt_layout.field_pgtl_style
+field_name: field_pgtl_style
+entity_type: paragraph
+bundle: pgt_layout
+label: 'Layout style'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: pgtl-cols
+default_value_callback: ''
+settings: {  }
+field_type: list_string

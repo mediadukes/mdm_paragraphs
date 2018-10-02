@@ -7,6 +7,10 @@ dependencies:
   - field_group
   - views
   - viewsreference
+  - entity_browser
+  - entity_browser_entity_form
+  - inline_entity_form
+  - entity_class_formatter
 
 type: module
 core: 8.x

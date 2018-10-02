@@ -21,3 +21,5 @@ map:
   pgt_text: editorial
   pgt_view: reusable
   pgt_image: editorial
+  pgt_block: reusable
+  pgt_layout: helpers

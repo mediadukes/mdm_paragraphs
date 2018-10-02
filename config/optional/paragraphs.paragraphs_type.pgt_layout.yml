@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_browser
+third_party_settings:
+  paragraphs_browser:
+    image_path: modules/contrib/mdm_paragraphs/src/images/pg_browser_icons/layout.png
+id: pgt_layout
+label: Layout
+icon_uuid: null
+description: 'Adds a paragraph that holds other paragraphs to display them as columns or rows.'
+behavior_plugins: {  }

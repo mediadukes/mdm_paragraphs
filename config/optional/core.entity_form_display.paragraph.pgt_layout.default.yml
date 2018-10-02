@@ -1,0 +1,71 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pgt_layout.field_pg_descr
+    - field.field.paragraph.pgt_layout.field_pgtl_content
+    - field.field.paragraph.pgt_layout.field_pgtl_style
+    - paragraphs.paragraphs_type.pgt_layout
+  module:
+    - field_group
+    - paragraphs_browser
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - status
+        - field_pgtl_style
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Settings
+      region: content
+id: paragraph.pgt_layout.default
+targetEntityType: paragraph
+bundle: pgt_layout
+mode: default
+content:
+  field_pg_descr:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pgtl_content:
+    type: entity_reference_paragraphs_browser
+    weight: 1
+    settings:
+      title: 'Layout content'
+      title_plural: 'Layout content'
+      edit_mode: preview
+      add_mode: paragraphs_browser
+      form_display_mode: default
+      default_paragraph_type: _none
+      paragraphs_browser: base_set
+      modal_width: 80%
+      modal_height: auto
+    third_party_settings: {  }
+    region: content
+  field_pgtl_style:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true
