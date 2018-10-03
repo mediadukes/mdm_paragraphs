@@ -5,10 +5,12 @@ This module adds a few pre-configured paragraph types:
 - Text (for basic body text fields)
 - View (to reference views blocks using the [viewsreference](https://www.drupal.org/project/viewsreference) module)
 
-Two optional paragraph types can be installed (independently) if each of their dependencies are met:
+Four optional paragraph types can be installed (independently) if each of their dependencies are met:
 
 - Form (to reference [webforms](https://www.drupal.org/project/webform))
 - Image (to reference media using the custom [mdm_media](https://github.com/mediadukes/mdm_media) module)
+- Layout (to create multi column/row paragraphs)
+- Block (to reference blocks using an [entity_browser](https://www.drupal.org/project/entity_browser) to select existing blocks)
 
 More paragraph types will be added later.
 
