@@ -22,9 +22,5 @@
     "drupal/paragraphs_browser": "^1.0",
     "drupal/field_group": "^3.0",
     "drupal/viewsreference": "^2.0"
-  },
-  "extra": {
-    "patches": {},
-    "enable-patching": true
   }
 }
